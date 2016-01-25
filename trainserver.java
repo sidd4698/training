@@ -4,7 +4,7 @@ public class trainserver{
 public static void main(string[] args)
 {
 try{
-ServerSocket d=new ServerSocket(1234);
+ServerSocket d=new ServerSocket(1234);  // creating a socket
 Socket server=d.accept();
 DataInputStream sin= new DataInputStream(server.getInputStream());
 String str=(String)sin.readUTF();
